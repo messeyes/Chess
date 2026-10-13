@@ -1,11 +1,11 @@
 package org.example.application;
 
-import org.example.boardgame.Position;
+import org.example.chess.ChessMatch;
 
 public class Main {
     public static void main(String[] args) {
 
-        Position pos = new Position(3,5);
-        System.out.println(pos.toString());
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
